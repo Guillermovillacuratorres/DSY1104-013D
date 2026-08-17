@@ -1,0 +1,153 @@
+
+.primero{
+    color: red;
+}
+
+#segundo{
+    color: green;
+}
+
+.primero,#segundo{
+    color: blue;
+}
+
+.contenedor h1{
+    color: blueviolet;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    background-color: rgb(49, 49, 79);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 1s;
+}
+
+.padding{
+    border: 1px black solid;
+    height: 100px;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+
+
+.nav a:hover{
+    color: crimson;
+}
+
+
+.footer{
+    background-color: rgb(49, 49, 79);
+    color: white;
+    padding: 24px 32px;
+    margin-top: auto;
+}
+
+.contenido-footer{
+    max-width: 800px;
+    /*border: 1px red solid;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer p{
+    font-size: 15px;
+    margin: 0;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 1s;
+}
+
+.footer-nav a:hover{
+    color: red;
+}
+
+
+
+.card{
+    margin: 20px;
+    border: 2px black solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+
+.contenedor-boton{
+    /*border: 1px palevioletred solid;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+
+.img-producto{
+    width: 200px;
+}
+
+
+.contenedor-boton .ver{
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 70px;
+    border-radius: 1.5rem;
+}
+
+
+
+.contenedor-boton .comprar{
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 70px;
+    border-radius: 1.5rem;
+}
