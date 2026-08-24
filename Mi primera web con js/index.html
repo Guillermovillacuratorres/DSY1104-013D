@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <section id="Formulario">
+            <div class="container">
+                <h2>Datos personales</h2>
+                <form action="#">
+                    <div class="row">
+
+                        <div class="col-6 mt-3">
+                            <div class="contenedor-input">
+                                <label id="lblNombre" for="nombre">Nombre:</label>
+                                <input id="nombre" class="form-control" type="text" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>
+
+
+                        <div class="col-6 mt-3">
+                            <div class="contenedor-input">
+                                <label for="apellido">Apellido:</label>
+                                <input id="apellido" class="form-control" type="text" placeholder="Ingrese su apellido">
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-10 mt-3">
+                            <div class="contenedor-input">
+                                <label for="direccion">Dirección:</label>
+                                <input id="direccion" class="form-control" type="text" placeholder="Ingrese su dirección">
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-2 mt-3">
+                            <div class="contenedor-input">
+                                <label for="edad">Edad:</label>
+                                <input id="edad" class="form-control" type="number" placeholder="Ingrese su edad">
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 contenedr-btn">
+                            <button onclick="guardar()" class="btn btn-primary btn-l">Guardar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="function.js"></script>
+</body>
+
+</html>
