@@ -1,3 +1,5 @@
+const LLAVE = "carrito_shop";
+
 const section = document.getElementById("prueba");
 console.log(section);
 
@@ -49,12 +51,27 @@ for (const i of productos) {
     const btnAgregarCarro = document.createElement("button");
     btnAgregarCarro.textContent = "Agregar al carrito";
     btnAgregarCarro.className = "btn btn-primary mt-3";
+    btnAgregarCarro.addEventListener("click", function(){
+        //alert(i.i);
+        guardarProducto(i);
+    })
     nuevoDiv.appendChild(btnAgregarCarro);
 
 }
 
 
 
-function name(params) {
-    
+function guardarProducto(producto) {
+    var storageActual = localStorage.getItem(LLAVE);
+    var lista = [];
+    if (storageActual != null) {
+        var storageParse = JSON.parse(storageActual);
+        lista.push(producto);
+        storageParse.push(lista);
+        localStorage.setItem(LLAVE,JSON.stringify(storageParse));
+    }else{
+        lista.push(producto);
+        localStorage.setItem(LLAVE, JSON.stringify(lista));
+    }
+
 }
