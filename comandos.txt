@@ -1,0 +1,33 @@
+Configuración de la cuenta:
+
+// Mostrar credenciales
+git config --global --list
+
+git config --global user.name "nombre usuario"
+git config --global user.email "correo"
+
+//clonar repo
+git clone link_repo
+
+
+https://github.com/Guillermovillacuratorres/dsy1104-github
+
+//estado del repo local - tengo cambios?
+git status
+
+//que vamos a subir?
+git add .
+git add texto 1.txt
+
+//preparamos el paquete que vamos a enviar.
+git commit -m "Se agrega un documento de texto."
+
+
+//enviarlo
+git push
+
+
+
+//actualizar el local
+git fetch
+git pull
