@@ -3,10 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Inicio from './pages/inicio/Inicio.jsx'
+import { RouterProvider } from 'react-router-dom';
+import { routes } from './routes.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Inicio />
+    <RouterProvider router ={routes} />
   </StrictMode>,
 )
