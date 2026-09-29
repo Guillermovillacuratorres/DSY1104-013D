@@ -2,6 +2,7 @@ import estilos from './inicio.module.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
+import App_navbar from '../../components/navbar/navbar';
 
 
 function Inicio() {
@@ -15,7 +16,7 @@ function Inicio() {
 
     return(
             <>
-            
+            <App_navbar/>
             <h1 className={estilos.titulo}>Hooola</h1>
             <img src="https://img.magnific.com/psd-gratis/linda-escena-perro-marron-blanco_23-2150179279.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
             <button onClick={navegarNosotros}>Ir a nosotros</button>
