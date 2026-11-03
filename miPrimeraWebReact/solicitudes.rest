@@ -1,0 +1,26 @@
+
+
+#http  --> 80
+#https --> 443
+
+POST http://3.84.242.219/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "hola",
+    "password": "hola"
+}
+
+#######Registro
+POST http://3.84.242.219/auth/registro HTTP/1.1
+content-type: application/json
+
+{
+    "username": "hola",
+    "password": "hola"
+}
+
+####Obtener todos los vehiculos
+GET http://3.84.242.219/vehiculo HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJob2xhIiwiaWF0IjoxNzkzNjQyOTY2LCJleHAiOjE3OTM2NDM4NjZ9.JSJWULLfTdlsrSa3B647R_JUEXyeNJn21gG6x5bJTn0
+

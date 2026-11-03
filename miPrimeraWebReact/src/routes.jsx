@@ -2,12 +2,14 @@ import { createBrowserRouter } from "react-router-dom";
 import Inicio from "./pages/inicio/Inicio";
 import Nosotros from "./pages/nosotros/nosotros";
 import Formulario from "./pages/formulario/formulario";
+import Login from "./pages/login/login";
+import RutaProtegida from "./components/rutaProtegida/rutaProtegida";
 
 export const routes = createBrowserRouter(
     [
         {
             path:'/',
-            element:<Inicio/>
+            element:<Login/>
         },
         {
             path:'nosotros/:paraIdAuto',
@@ -16,6 +18,14 @@ export const routes = createBrowserRouter(
         {
             path:'formulario',
             element:<Formulario/>
+        },
+        {
+            path:'inicio',
+            element:<RutaProtegida><Inicio/></RutaProtegida>
+        },
+        {
+            path:'login',
+            element:<Login/>
         }
     ]
 );
