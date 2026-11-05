@@ -3,7 +3,10 @@
 #http  --> 80
 #https --> 443
 
-POST http://3.84.242.219/auth/login HTTP/1.1
+@url_base=100.53.191.217
+@token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJob2xhIiwiaWF0IjoxNzkzODIwMTQyLCJleHAiOjE3OTM4MjEwNDJ9.PcPNCHTePOlpI3Tcj4cg1jsxRhgTX42TtYWLvdP2CTc
+
+POST http://{{url_base}}/auth/login HTTP/1.1
 content-type: application/json
 
 {
@@ -12,7 +15,7 @@ content-type: application/json
 }
 
 #######Registro
-POST http://3.84.242.219/auth/registro HTTP/1.1
+POST http://{{url_base}}/auth/registro HTTP/1.1
 content-type: application/json
 
 {
@@ -21,6 +24,38 @@ content-type: application/json
 }
 
 ####Obtener todos los vehiculos
-GET http://3.84.242.219/vehiculo HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJob2xhIiwiaWF0IjoxNzkzNjQyOTY2LCJleHAiOjE3OTM2NDM4NjZ9.JSJWULLfTdlsrSa3B647R_JUEXyeNJn21gG6x5bJTn0
+GET http://{{url_base}}/vehiculo HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+####Buscar vehiculo
+GET http://{{url_base}}/vehiculo/5 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+#######Crear vehiculo
+POST http://{{url_base}}/vehiculo HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "marca": "Chevrolet",
+    "color": "corsa",
+    "categoria": {"idCategoria":1}
+}
+
+
+
+####Eliminar vehiculo
+DELETE http://{{url_base}}/vehiculo/1 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+####Obtener todas las categorias
+GET http://{{url_base}}/categoria HTTP/1.1
+Authorization: Bearer {{token}}
 

@@ -15,6 +15,7 @@ function App_navbar() {
             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
             <Nav.Link as={Link} to="/nosotros/10">Nosotros</Nav.Link>
             <Nav.Link as={Link} to="/formulario">Formulario</Nav.Link>
+            <Nav.Link as={Link} to="/vehiculo">Vehiculos</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
